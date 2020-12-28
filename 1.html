@@ -3,14 +3,19 @@
 <head><title>27사단 수색대대</title>
 <meta charset="utf-8">
 <style>
-h1{font-size:45px; text-align:center;border-bottom:1px solid black; margin:0; padding:20px;}
+h1{font-size:45px; text-align:center;border-bottom:1px solid black; margin:0; padding:20px;} 
 a {color:black; text-decoration:none;}
+ol {border-right:1px solid black; margin:0; padding:20px; width:100px;}
 #active {color:red;}
 .saw{color:gray;}
+#grid {display :grid; grid-template-columns:150px 1fr;}
 </style>
 </head>
 <body>
-<h1><a href="index.html" class="saw" >27사단 수색대대</a></h1>
+<h1><a href="index.html" class="saw" >27사단 수색대대</a>
+<input type="button" value="야간모드" onclick="document.querySelector('body').style.backgroundColor='black'; document.querySelector('body').style.color='white';">
+<input type="button" value="주간모드" onclick="document.querySelector('body').style.backgroundColor='white'; document.querySelector('body').style.color='black';">
+</h1>
 <ol>
 <li><a href="1.html" class="saw" id="active">1중대</a></li>
 <li><a href="2.html" class="saw" >2중대</a></li>
